@@ -2,6 +2,7 @@
   "name": "cc-enterprise",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/guepingdave/c.c-enterprise",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
