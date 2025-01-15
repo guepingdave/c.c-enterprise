@@ -30,12 +30,12 @@
     max-width: 100vw;
     margin: auto;
     text-align: center;
-    background-color: #1e4e9a; /* Dark blue */
+    background-color: #f0f1f1; /* Dark blue */
   }
   
   h2 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #000000;
   }
   
   .services-container {
@@ -47,7 +47,7 @@
   
   .service-card {
     flex: 1;
-    background: rgb(244, 244, 244);
+    background: #effcfc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

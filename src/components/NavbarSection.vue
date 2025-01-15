@@ -45,7 +45,7 @@ export default {
 <style scoped>
 .navbar {
   background: #1e3b6b; /* Dark blue */
-  color: white;
+  color: #f0f1f1;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@ img{
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: #f0f1f1;
   z-index: 1001; /* Ensure the toggle button is above other elements */
   position: absolute;
   top: 20px;
@@ -93,7 +93,7 @@ img{
 }
 
 .nav-links a {
-  color: white;
+  color: #f0f1f1;
   text-decoration: none;
   padding: 5px 10px;
 }
