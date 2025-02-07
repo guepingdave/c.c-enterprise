@@ -19,16 +19,16 @@
           <p><i class="fas fa-location-arrow"> </i> C.C ENTERPRISE<br />800 Industrial Avenue
             <br />Ottawa, Ontario<br />K1G 4B8, Canada<br /> Unit 4</p>
           <p><i class="fas fa-phone"></i> <a href="tel:16138589966 "> 613.858.9966</a> </p>
-          <p><i class="fas fa-envelope"></i>  <a href="mailto:corey@ccenterprise.ca"> corey@ccenterprise.ca</a></p>
+          <p><i class="fas fa-envelope"></i>  <a href="mailto:info@ccenterprise.ca"> info@ccenterprise.ca</a></p>
         </div>
   
         <div class="details-column">
-          <h3>OFFICE HOURS</h3>
-          <p>Monday: 7:30 AM – 3:30 PM</p>
-          <p>Tuesday: 7:30 AM – 3:30 PM</p>
-          <p>Wednesday: 7:30 AM – 3:30 PM</p>
-          <p>Thursday: 7:30 AM – 3:30 PM</p>
-          <p>Friday: 7:30 AM – 3:30 PM</p>
+          <h3 class="details-cell">OFFICE HOURS</h3>
+          <p class="details-cell">Monday: 7:30 AM – 7:00 PM</p>
+          <p class="details-cell">Tuesday: 7:30 AM – 7:00 PM</p>
+          <p class="details-cell">Wednesday: 7:30 AM – 7:00 PM</p>
+          <p class="details-cell">Thursday: 7:30 AM – 7:00 PM</p>
+          <p class="details-cell">Friday: 7:30 AM – 7:00 PM</p>
         </div>
   
         <div class="details-column">
@@ -58,7 +58,6 @@
   <style scoped>
   .contact-info-section {
     text-align: center;
-    padding: 20px;
     font-family: Arial, sans-serif;
     width: 100vw; /*max widht viewpoint*/
     min-height: fit-content;
@@ -94,7 +93,9 @@
     text-align: center;
     color: #0501f7;
     font-size: 2rem;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;   
+    margin-top: -30px; 
+    padding-top: 5vh;
   }
   
   .contact-details {
@@ -108,7 +109,11 @@
     width: 30%;
     text-align: center;
   }
-  
+
+  .details-cell {
+    text-align:left;
+
+}  
   .details-column h3 {
     color: #0501f7;
     margin-bottom: 20px;

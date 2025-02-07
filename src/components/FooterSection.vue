@@ -14,7 +14,7 @@
           <i class="fab fa-x-twitter"></i>
         </a>
         <!-- Email -->
-        <a href="mailto:corey@ccenterprise.ca" aria-label="Email">
+        <a href="mailto:info@ccenterprise.ca" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
         <!-- TikTok -->
@@ -24,7 +24,7 @@
       </div>
       <!-- Footer Text -->
       <p>
-        &copy; 2024 C.C ENTERPRISE | All rights reserved. GUEPING David 
+        &copy; 2024 C.C ENTERPRISE | All rights reserved. David GUEPING
       </p>
     </footer>
   </template>

@@ -1,6 +1,63 @@
 <template>
   <section id="testimonials" class="testimonials-section">
     <h2> What Our Clients Say</h2>
+    <!-- Elfsight Widget Container -->
+    <div class="elfsight-app-e1c4e04c-3157-48b1-9065-b64476de4ff3" data-elfsight-app-lazy></div> 
+  </section>
+</template>
+
+<script>
+import { onMounted, nextTick, ref } from "vue";
+
+export default {
+  name: "TestimonialsSection",
+  setup() {
+    const elfsightWidget = ref(null);
+
+    onMounted(() => {
+      nextTick(() => {
+        // Load the Elfsight script dynamically
+        const script = document.createElement("script");
+        script.src = "https://static.elfsight.com/platform/platform.js";
+        script.async = true;
+        document.body.appendChild(script);
+
+        console.log("Elfsight widget script loaded.");
+      });
+    });
+
+    return { elfsightWidget };
+  },
+};
+</script>
+
+
+<style scoped>
+.testimonials-section {
+  padding: 40px 20px;
+  max-width: 100vw;
+  margin: auto;
+  text-align: center;
+  background-color: #effcfc;  /*white background to match your theme */
+}
+
+.elfsight-app-e1c4e04c-3157-48b1-9065-b64476de4ff3 {
+  flex: 1;
+  margin: 40px;
+  display: flex;
+
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1e4e9a;  /* Dark blue for the title */
+}
+
+</style>
+
+<!-- <template>
+  <section id="testimonials" class="testimonials-section">
+    <h2> What Our Clients Say</h2>
     <div v-if="reviews.length > 0">
       <div v-for="(review, index) in reviews" :key="index" class="review">
         <img :src="review.profile_photo_url" alt="Reviewer Profile" class="reviewer-photo" />
@@ -79,4 +136,5 @@ p {
 i {
   color: #1e4e9a;
 }
-</style>
+</style> -->
+

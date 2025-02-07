@@ -27,7 +27,7 @@
   .hero-banner {
 
     background-image: url('@/assets/cc-hero-view-v2.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     width: 100vw; /*max widht viewpoint*/
     min-height: 100vh;
@@ -46,6 +46,7 @@
     font-size: 2rem;
     font-weight: bold;
   }
+  
   .hero-banner button {
     font-size: 1.5rem;
     width: 15rem;

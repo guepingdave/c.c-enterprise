@@ -12,7 +12,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/OurWork">Our Work</router-link>
       <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
+      <router-link  to="/TestimonialsPage">Testimonials</router-link >
       <router-link to="/ContactPage">Contact</router-link>
       <a href="#partners">Partners</a>
     </div>

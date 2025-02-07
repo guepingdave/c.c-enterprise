@@ -2,7 +2,8 @@
     <div>
       <!-- Navbar Component -->
       <NavbarSection :isMenuOpen="isMenuOpen" @toggleMenu="toggleMenu" />
-      <ComingSoon />
+      <!-- Testimonials Section Component -->
+      <TestimonialsSection />
       <!-- Footer Component -->
       <FooterSection />
     </div>
@@ -12,14 +13,14 @@
   // Import components for each section
   import NavbarSection from '@/components/NavbarSection.vue';
   import FooterSection from '@/components/FooterSection.vue';
-  import ComingSoon from '@/components/ComingSoon.vue';
+  import TestimonialsSection from '@/components/TestimonialsSection.vue';
   
   export default {
     name: "TestimonialsPage",
  
     components: {
       NavbarSection,
-      ComingSoon,
+      TestimonialsSection,
       FooterSection,
     },
   };

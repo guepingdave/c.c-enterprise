@@ -10,8 +10,8 @@
         </div>
   
         <!-- Placeholder for other partner logos -->
-        <div class="partner-card">Partner Logo 2</div>
-        <div class="partner-card">Partner Logo 3</div>
+        <!-- <div class="partner-card">Partner Logo 2</div>
+        <div class="partner-card">Partner Logo 3</div> -->
       </div>
     </section>
   </template>
@@ -28,7 +28,7 @@
     max-width: 100vw;
     margin: auto;
     text-align: center;
-    background-color: #ebebeb;  /* Light green background to match your theme */
+    background-color: #f0f1f1;  /* Light green background to match your theme */
   }
   
   h2 {
@@ -48,7 +48,7 @@
     box-shadow: 0 2px 0 aquamarine;
   }
   .partner-card {
-    flex: 1;
+    flex: 0.33;
     background: #1e4e9a;
     padding: 20px;
     border-radius: 8px;

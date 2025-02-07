@@ -16,16 +16,17 @@
   <style scoped>
   .hero-banner {
 
-    background-image: url('@/assets/white hero truck.jpg');
-    background-size: cover;
+    background-image: url('@/assets/cc-contact-hero.png');
+    background-size: 100% 100%;
     background-position: center;
     width: 100vw; /*max widht viewpoint*/
     min-height: 600px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #0501f7;
+    color: #000000;
   }
 
   
@@ -39,22 +40,27 @@
   /* .hero-banner p {
     font-size: 2rem;
   } */
+
   .hero-banner button {
     font-size: 1.5rem;
-    width: 20rem;
+    width: 15rem;
     height: 3rem;
-    background-color: #1e3b6b;
-    color: white;
+    background-color: #3586a7;
+    color: #f0f1f1;
     padding: 10px 20px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 20px; /*Add some space between the text and button*/
     align-self: center; /* Center the button horizontally */
   }
 
   .hero-banner button:hover{
-    color: aqua;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    background-color: #302f2f;
+
   }
+  
+
   </style>
   
