@@ -1,22 +1,22 @@
 <template>
-    <section id="services" class="services-section">
-      <h2><i class="fas fa-concierge-bell"></i> Our Services</h2>
-      <div class="services-container">
-        <div class="service-card">
-          <h3><i class="fas fa-home"></i> Residential Moving</h3>
-          <p>Effortless relocation for your home.</p>
-        </div>
-        <div class="service-card">
-          <h3><i class="fas fa-building"></i> Office Relocation</h3>
-          <p>Seamless transitions for your business.</p>
-        </div>
-        <div class="service-card">
-          <h3><i class="fas fa-box"></i> Packing Services</h3>
-          <p>Secure packing for peace of mind.</p>
-        </div>
+  <section id="services" class="services-section">
+    <h2><i class="fas fa-concierge-bell"></i> {{ $t('our_services') }}</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3><i class="fas fa-home"></i> {{ $t('residential_moving') }}</h3>
+        <p>{{ $t('residential_desc') }}</p>
       </div>
-    </section>
-  </template>
+      <div class="service-card">
+        <h3><i class="fas fa-building"></i> {{ $t('office_relocation') }}</h3>
+        <p>{{ $t('office_desc') }}</p>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-box"></i> {{ $t('packing_services') }}</h3>
+        <p>{{ $t('packing_desc') }}</p>
+      </div>
+    </div>
+  </section>
+</template>
   
   <script>
   export default {

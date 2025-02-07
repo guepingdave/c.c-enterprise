@@ -1,10 +1,7 @@
 <template>
     <section id="company-pitch" class="pitch-section">
-      <h2><!--i class="fas fa-flag-checkered"></i--> Why Customers Choose Us</h2>
-      <p>
-        With over two decades of experience, we have earned our reputation as Ottawa’s most trusted movers. 
-        At CC ENTERPRISE, we specialize in delivering seamless and stress-free moving services, free of hidden fees.
-      </p>
+      <h2>{{ $t('why_choose_us') }}</h2>
+      <p>{{ $t('company_pitch') }}</p>
     </section>
   </template>
   

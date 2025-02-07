@@ -23,9 +23,7 @@
         </a>
       </div>
       <!-- Footer Text -->
-      <p>
-        &copy; 2024 C.C ENTERPRISE | All rights reserved. David GUEPING
-      </p>
+      <p>{{ $t('footer_rights') }}</p>
     </footer>
   </template>
   
@@ -50,6 +48,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    
   }
   
   .social-icons a {

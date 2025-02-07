@@ -1,11 +1,11 @@
 <template>
-    <header class="hero-banner">
-      <h1>Contact the best moving company today</h1>
-      <button>
-         Get a Free Quote
-      </button>
-    </header>
-  </template>
+  <header class="hero-banner">
+    <h1>{{ $t('contactBestMovingCompany') }}</h1>
+    <button>
+      {{ $t('get_quote') }}
+    </button>
+  </header>
+</template>
   
   <script>
   export default {

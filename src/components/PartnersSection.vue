@@ -1,6 +1,6 @@
 <template>
     <section id="partners" class="partners-section">
-      <h2><i class="fas fa-handshake"></i> Our Partners</h2>
+      <h2><i class="fas fa-handshake"></i> {{ $t('partners_title') }}</h2>
       <div class="partners-container">
         <!-- Partner 1 -->
         <div class="partner-card">

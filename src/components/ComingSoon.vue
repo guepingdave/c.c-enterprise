@@ -1,6 +1,6 @@
 <template>
     <section class="work">
-      <h1>Coming soon</h1>
+      <h1>{{ $t('c_soon') }}</h1>
     </section>
 </template>
 

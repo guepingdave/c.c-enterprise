@@ -1,53 +1,46 @@
 <template>
-    <section class="contact-info-section">
-      <h2>Go with us today</h2>
-      <p class="contact-pitch">
-        Moving doesn’t have to be stressful when you have the right team by your side. 
-        At C.C ENTERPRISE, we take the hassle out of moving by offering reliable, professional, 
-        and friendly service tailored to your needs. Whether you’re planning a residential 
-        move or relocating your business, our experienced movers in Ottawa are here to help 
-        every step of the way. We handle your belongings with care and ensure a smooth 
-        transition to your new location.
-        <br />
-        Need more information or ready to book your move? Contact us today—we’d 
-        be delighted to answer your questions and help you get started on your journey!
-      </p>
-  
-      <div class="contact-details">
-        <div class="details-column">
-          <h3>ADDRESS</h3>
-          <p><i class="fas fa-location-arrow"> </i> C.C ENTERPRISE<br />800 Industrial Avenue
-            <br />Ottawa, Ontario<br />K1G 4B8, Canada<br /> Unit 4</p>
-          <p><i class="fas fa-phone"></i> <a href="tel:16138589966 "> 613.858.9966</a> </p>
-          <p><i class="fas fa-envelope"></i>  <a href="mailto:info@ccenterprise.ca"> info@ccenterprise.ca</a></p>
-        </div>
-  
-        <div class="details-column">
-          <h3 class="details-cell">OFFICE HOURS</h3>
-          <p class="details-cell">Monday: 7:30 AM – 7:00 PM</p>
-          <p class="details-cell">Tuesday: 7:30 AM – 7:00 PM</p>
-          <p class="details-cell">Wednesday: 7:30 AM – 7:00 PM</p>
-          <p class="details-cell">Thursday: 7:30 AM – 7:00 PM</p>
-          <p class="details-cell">Friday: 7:30 AM – 7:00 PM</p>
-        </div>
-  
-        <div class="details-column">
-          <h3>PAYMENT</h3>
-          <p>We accept all payment means.</p>
-          <div class="payment-icons">
-            <img src="@/assets/visa.png" alt="Visa" />
-            <!-- <img src="@/assets/paypal.png" alt="PayPal" /> -->
-            <img src="@/assets/mastercard.png" alt="MasterCard" />
-            <img src="@/assets/interac.png" alt="Interac" />
-          </div>
+  <section class="contact-info-section">
+    <h2>{{ $t('goWithUsToday') }}</h2>
+    <p class="contact-pitch">
+      {{ $t('contactPitch') }}
+    </p>
+
+    <div class="contact-details">
+      <div class="details-column">
+        <h3>{{ $t('address') }}</h3>
+        <p><i class="fas fa-location-arrow"> </i> C.C ENTERPRISE<br />800 Industrial Avenue
+          <br />Ottawa, Ontario<br />K1G 4B8, Canada<br /> Unit 4</p>
+        <p><i class="fas fa-phone"></i> <a href="tel:16138589966"> {{ $t('phoneText') }} </a> </p>
+        <p><i class="fas fa-envelope"></i>  <a href="mailto:info@ccenterprise.ca"> {{ $t('emailText') }}</a></p>
+      </div>
+
+      <div class="details-column">
+        <h3 class="details-cell">{{ $t('officeHours') }}</h3>
+        <p class="details-cell">{{ $t('monday') }}</p>
+        <p class="details-cell">{{ $t('tuesday') }}</p>
+        <p class="details-cell">{{ $t('wednesday') }}</p>
+        <p class="details-cell">{{ $t('thursday') }}</p>
+        <p class="details-cell">{{ $t('friday') }}</p>
+        <!-- <p class="details-cell">{{ $t('saturday') }}</p>
+        <p class="details-cell">{{ $t('sunday') }}</p> -->
+      </div>
+
+      <div class="details-column">
+        <h3>{{ $t('payment') }}</h3>
+        <p>{{ $t('paymentInfo') }}</p>
+        <div class="payment-icons">
+          <img src="@/assets/visa.png" alt="Visa" />
+          <img src="@/assets/mastercard.png" alt="MasterCard" />
+          <img src="@/assets/interac.png" alt="Interac" />
         </div>
       </div>
-  
-      <div class="team-image">
-        <img src="@/assets/team-image.png" alt="Team Image" />
-      </div>
-    </section>
-  </template>
+    </div>
+
+    <div class="team-image">
+      <img src="@/assets/team-image.png" alt="{{ $t('teamImageAlt') }}" />
+    </div>
+  </section>
+</template>
   
   <script>
   export default {

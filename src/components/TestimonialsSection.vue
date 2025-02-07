@@ -1,6 +1,6 @@
 <template>
   <section id="testimonials" class="testimonials-section">
-    <h2> What Our Clients Say</h2>
+    <h2>{{ $t('testimonials_title') }}</h2>
     <!-- Elfsight Widget Container -->
     <div class="elfsight-app-e1c4e04c-3157-48b1-9065-b64476de4ff3" data-elfsight-app-lazy></div> 
   </section>

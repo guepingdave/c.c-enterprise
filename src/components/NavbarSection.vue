@@ -9,17 +9,21 @@
       <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
     </div>
     <div class="nav-links" :class="{ 'nav-active': isMenuOpen }">
-      <router-link to="/">Home</router-link>
-      <router-link to="/OurWork">Our Work</router-link>
-      <a href="#services">Services</a>
-      <router-link  to="/TestimonialsPage">Testimonials</router-link >
-      <router-link to="/ContactPage">Contact</router-link>
-      <a href="#partners">Partners</a>
+      <router-link to="/">{{ $t('home') }}</router-link>
+      <router-link to="/OurWork">{{ $t('our_work') }}</router-link>
+      <a href="#services">{{ $t('services') }}</a>
+      <router-link  to="/TestimonialsPage">{{ $t('testimonials') }}</router-link >
+      <router-link to="/ContactPage">{{ $t('contact') }}</router-link>
+      <a href="#partners">{{ $t('partners') }}</a>
     </div>
     <div class="language-switch">
-      <select id="language-switcher">
-        <option value="en">🌐 English</option>
-        <option value="fr">🌐 Français</option>
+      <select v-model="$i18n.locale" @change="changeLanguage">
+        <option value="en">
+    <i class="fas fa-flag-usa" style="font-size: 20px;"></i> 🌐 English
+  </option>
+  <option value="fr">
+    <i class="fas fa-flag-fr" style="font-size: 20px;"></i> 🌐 Français
+  </option>
       </select>
     </div>
   </nav>
@@ -28,15 +32,11 @@
 <script>
 export default {
   name: "NavbarSection",
-  data() {
-    return {
-      isMenuOpen: false, // Track menu open/close state
-    };
-  },
   methods: {
-    toggleMenu() {
-      console.log("Menu toggled");
-      this.isMenuOpen = !this.isMenuOpen; // Toggle menu state
+    changeLanguage(event) {
+      const selectedLanguage = event.target.value;
+      this.$i18n.locale = selectedLanguage; // Change the language dynamically
+      localStorage.setItem('language', selectedLanguage); // Store the language preference
     },
   },
 };
@@ -103,6 +103,11 @@ img{
   box-shadow: 0 2px 0 aquamarine;
 }
 
+.language-switch option:hover {
+  color: aqua;
+  box-shadow: 0 2px 0 aquamarine;
+}
+
 .nav-links.nav-active {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,10 @@ img{
 
 select{
   font-size: 1.3rem;
+}
+
+.image_flag {
+  width: 20px; height: 15px;
 }
 
 /* Media query for phones and tablets with screen width less than 700px */

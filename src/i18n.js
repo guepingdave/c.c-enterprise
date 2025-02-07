@@ -1,23 +1,49 @@
 import { createI18n } from 'vue-i18n';
 
-// Translation messages
-const messages = {
-  en: {
-    welcome: 'Welcome to our site!',
-    about: 'About us',
-  },
-  fr: {
-    welcome: 'Bienvenue sur notre site !',
-    about: 'À propos de nous',
+// English translations
+const en = {
+  message: {
+    hello: 'Hello!',
+    welcome: 'Welcome to our website.',
   },
 };
 
-// Create the i18n instance
+// French translations
+const fr = {
+  message: {
+    hello: 'Bonjour!',
+    welcome: 'Bienvenue sur notre site Web.',
+  },
+};
+
+// Create Vue I18n instance
 const i18n = createI18n({
-  legacy: false, // Required for Vue 3 composition API
-  locale: 'en', // Default language
+  legacy: false, // use Composition API (optional)
+  locale: 'en',  // Default language
   fallbackLocale: 'en', // Fallback language if a translation is missing
-  messages,
+  messages: {
+    en,
+    fr,
+  },
+
+// // Translation messages
+// const messages = {
+//   en: {
+//     welcome: 'Welcome to our site!',
+//     about: 'About us',
+//   },
+//   fr: {
+//     welcome: 'Bienvenue sur notre site !',
+//     about: 'À propos de nous',
+//   },
+// };
+
+// // Create the i18n instance
+// const i18n = createI18n({
+//   legacy: false, // Required for Vue 3 composition API
+//   locale: 'en', // Default language
+//   fallbackLocale: 'en', // Fallback language if a translation is missing
+//   messages,
 });
 
 export default i18n;

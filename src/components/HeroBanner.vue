@@ -3,7 +3,7 @@
       <!-- <img src="@/assets/cc enterprise favicon.png" alt="C.C ENTERPRISE LOGO" /> -->
       <!-- <h1>C.C ENTERPRISE</h1> -->
       <!-- <p>Big or Small, We Move it All</p> -->
-      <button>Get a Free Quote</button>
+      <button>{{ $t('get_quote') }}</button>
     </header>
   </template>
   
