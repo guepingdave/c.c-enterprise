@@ -2,7 +2,7 @@
     <footer class="footer">
       <div class="social-icons">
         <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100089692933924" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
         <!-- Instagram -->

@@ -26,7 +26,7 @@
   }
   .hero-banner {
 
-    background-image: url('@/assets/cc-hero-view1.png');
+    background-image: url('@/assets/cc-hero-view3.png');
     background-size: 100% 100%;
     background-position: center;
     width: 100vw; /*max widht viewpoint*/
